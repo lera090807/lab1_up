@@ -25,12 +25,10 @@ const ProductCard = ({ nazvanieTovara, cenaTovara, imageUrl, razmery }) => {
 
   return (
     <div className="product-card">
-      {/* Изображение товара */}
       <div className="product-image">
         <img src={imageUrl} alt={nazvanieTovara} />
       </div>
       
-      {/* Информация о товаре */}
       <div className="product-info">
         <h3 className="product-category">Размеры</h3>
         
@@ -44,7 +42,6 @@ const ProductCard = ({ nazvanieTovara, cenaTovara, imageUrl, razmery }) => {
         <h2 className="product-title">{nazvanieTovara}</h2>
         <p className="product-price">{cenaTovara.toLocaleString()} ₽</p>
         
-        {/* Кнопки и счетчик */}
         <div className="product-actions">
           {pokazatUpravlenie ? (
             <div className="cart-controls">
