@@ -1,0 +1,53 @@
+.app {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  min-height: 100vh; /* Добавь это */
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.app-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 0; /* Добавь это */
+}
+
+/* Добавь стили для body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .products-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .app {
+    padding: 20px 10px;
+  }
+  
+  .app-header h1 {
+    font-size: 24px;
+  }
+}
